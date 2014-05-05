@@ -19,12 +19,12 @@ install = (_, jasmine) ->
   globalPatches =
 
     # Patch describe so, that, I, don't, have, to, write, code, like, -> @.
-    describe: _.wrap(@describe, (it, description, suite) ->
+    describe: _.wrap(@describe, (describe, description, suite) ->
       if suite
-        it.call(@, description, suite)
+        describe.call(@, description, suite)
       else # we are passing spec in as a function argument
         (suite) =>
-          it.call(@, description, suite)
+          describe.call(@, description, suite)
     )
 
     # Patch it so, that, I, don't, have, to, write, code, like, -> @.

@@ -20,13 +20,13 @@
   install = function(_, jasmine) {
     var globalPatches;
     globalPatches = {
-      describe: _.wrap(this.describe, function(it, description, suite) {
+      describe: _.wrap(this.describe, function(describe, description, suite) {
         var _this = this;
         if (suite) {
-          return it.call(this, description, suite);
+          return describe.call(this, description, suite);
         } else {
           return function(suite) {
-            return it.call(_this, description, suite);
+            return describe.call(_this, description, suite);
           };
         }
       }),
