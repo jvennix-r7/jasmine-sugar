@@ -17,6 +17,10 @@ As opposed to vanilla Jasmine:
 
     $ ./jake spec [DEBUG=1] [SPEC=./spec/set.coffee]
 
+### Dependencies
+
+- underscore (~1.6)
+
 ### License
 
 [MIT](http://en.wikipedia.org/wiki/MIT_License)
