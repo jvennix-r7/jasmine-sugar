@@ -2,7 +2,7 @@ fs = require 'fs'
 _ = require 'underscore'
 child_process = require 'child_process'
 JASMINE_PATH = './node_modules/jasmine-node/lib/jasmine-node/cli.js'
-SRC_PATH = './src/set.coffee'
+SRC_PATH = './src/sugar.coffee'
 DIST_PATH = './jasmine-sugar.js'
 
 run_task = (cmd, cmpl_fn=complete) ->
