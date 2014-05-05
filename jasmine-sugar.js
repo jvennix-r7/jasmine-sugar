@@ -5,7 +5,7 @@
 //
 // Works in both node.js and a browser environment.
 //
-// Requires jasmine.js
+// Requires underscore.js and jasmine.js
 //
 // @author Joe Vennix
 // @copyright Rapid7 2014
