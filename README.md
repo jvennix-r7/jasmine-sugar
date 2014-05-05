@@ -22,6 +22,7 @@ As opposed to vanilla Jasmine:
 ### Dependencies
 
 - underscore (~1.6)
+- node >= 0.8
 
 ### License
 
