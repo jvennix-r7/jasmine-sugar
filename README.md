@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jvennix-r7/jasmine-sugar.svg?branch=master)](https://travis-ci.org/jvennix-r7/jasmine-sugar)
+
 jasmine-sugar adds some syntactic niceness to the [Jasmine](http://jasmine.github.io/) behavior-driven development framework for testing JavaScript code. More specifically, it allows for the passing of suite and spec definitions as a parameter to a returned function, instead of as a second parameter (which is of course still supported). This is especially handy with Coffeescript, where you will end up with:
 
     describe("Foo") ->
